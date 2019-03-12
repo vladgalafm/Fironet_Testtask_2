@@ -1,7 +1,7 @@
 {
   "name": "2task_vue",
   "version": "1.0.0",
-  "description": "[Link to GitHub page](https://vladgalafm.github.io/MA_Task_9_BicycleTheme/app/)",
+  "description": "",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,7 +9,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.26.3",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^6.0.0",
     "gulp-plumber": "^1.2.1",
@@ -17,5 +16,9 @@
     "gulp-sass": "^4.0.2",
     "gulp-watch": "^5.0.1",
     "node-sass": "^4.10.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.11",
+    "minimatch": "^3.0.4"
   }
 }
