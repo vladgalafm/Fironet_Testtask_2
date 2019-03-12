@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', 'Helvetica', sans-serif;
+}
+
+.crypto {
+  padding: 30px;
+}
+
+.crypto__timer {
+  padding-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.crypto__table {
+  border-collapse: collapse;
+}
+
+.crypto__header th {
+  padding: 10px 0;
+  border-bottom: 1px solid #22dd22;
+}
+
+.crypto__header th:first-of-type {
+  width: 50px;
+}
+
+.crypto__header th:nth-of-type(2) {
+  width: 150px;
+}
+
+.crypto__header th:nth-of-type(3) {
+  width: 120px;
+}
+
+.crypto__header th:last-of-type {
+  width: 180px;
+}
+
+.crypto__list-item {
+  border-bottom: 1px solid #cccccc;
+}
+
+.crypto__list-item td {
+  border-right: 1px solid #eeeeee;
+  vertical-align: middle;
+}
+
+.crypto__list-item td:first-of-type {
+  padding-right: 15px;
+  font-weight: 700;
+  color: #888888;
+  text-align: right;
+  border-right-color: #cccccc;
+}
+
+.crypto__list-item td:nth-of-type(2) {
+  padding: 10px;
+  text-align: center;
+  border-right: none;
+}
+
+.crypto__list-item td:nth-of-type(3) {
+  padding-right: 10px;
+  font-weight: 700;
+}
+
+.crypto__list-item td:nth-of-type(4) {
+  padding: 0 10px;
+  text-align: center;
+}
+
+.crypto__list-item td:last-of-type {
+  padding: 0 10px;
+  text-align: right;
+  border-right-color: #cccccc;
+}
+
+.crypto__name {
+  line-height: 1.4rem;
+  color: #888888;
+}

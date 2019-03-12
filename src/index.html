@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Task 2</title>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<div id="app" class="crypto">
+  <div class="crypto__timer">
+    <span>
+      Time to next update -
+    </span>
+    <span>
+      {{ displayingTime }}
+    </span>
+  </div>
+  <table class="crypto__table">
+    <thead>
+      <tr class="crypto__header">
+        <th>
+          #
+        </th>
+        <th colspan="2">
+          Coin
+        </th>
+        <th>
+          Price
+        </th>
+        <th>
+          Tokens on mart
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr v-for="(coin, index) in coinsData" class="crypto__list-item">
+        <td>
+          {{ ++index }}
+        </td>
+        <td>
+          <img width="35" :src="getFullUrl(coin.CoinInfo.ImageUrl)" alt="" />
+        </td>
+        <td>
+          <span>
+            {{ coin.CoinInfo.FullName }}
+          </span>
+          <br>
+          <span class="crypto__name">
+            {{ coin.CoinInfo.Name }}
+          </span>
+        </td>
+        <td>
+          {{ coin.DISPLAY.USD.PRICE }}
+        </td>
+        <td>
+          {{ coin.DISPLAY.USD.SUPPLY }}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
